@@ -1,15 +1,15 @@
 /* ==UserStyle==
 @name           Yuri Chess
 @namespace      github.com/Bruhtek
-@version        1.0.0
+@version        1.0.1
 @description    A yuri stylus style, designed for chess.com
 @author         Bruhtek
 @homepageURL	https://github.com/Bruhtek/stylus-yuri-chesscom
 @supportURL		https://github.com/Bruhtek/stylus-yuri-chesscom/issues
-@updateURL		https://github.com/Bruhtek/stylus-yuri-chesscom/blob/master/main.user.css
+@updateURL		https://github.com/Bruhtek/stylus-yuri-chesscom/raw/master/main.user.css
 @license		MIT
 
-@var 			text	backgroundUrl	"Background Image URL"	url(https://github.com/Bruhtek/stylus-yuri-chesscom/blob/master/background.jpg)
+@var 			text	backgroundUrl	"Background Image URL"	url(https://github.com/Bruhtek/stylus-yuri-chesscom/raw/master/background.jpg)
 ==/UserStyle== */
 
 @-moz-document domain("chess.com") {
@@ -30,15 +30,24 @@
 	.player-tagline,
 	.board-layout-nav,
 	.sidebar-component,
+	.board-layout-sidebar,
+	.sidebar,
+	.player-row-container,
+	.message-layout-column-one,
+	.message-layout-column-two,
+	.base-sidebar,
+	.v5-section,
 	.board-layout-controls * {
 		background-color: rgba(0, 0, 0, .45) !important;
 	}
-
+	
+	.player-row-container,
 	.player-tagline,
 	.player-avatar {
 		padding: 2px;
 		border-radius: 5px;
 	}
+	.icon-font-chess,
 	.board-layout-controls * {
 		padding: 0;
 		margin: 0 !important;
