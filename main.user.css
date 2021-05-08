@@ -1,0 +1,46 @@
+/* ==UserStyle==
+@name           Yuri Chess
+@namespace      github.com/Bruhtek
+@version        1.0.0
+@description    A yuri stylus style, designed for chess.com
+@author         Bruhtek
+@homepageURL	https://github.com/Bruhtek/stylus-yuri-chesscom
+@supportURL		https://github.com/Bruhtek/stylus-yuri-chesscom/issues
+@updateURL		https://github.com/Bruhtek/stylus-yuri-chesscom/blob/master/main.user.css
+@license		MIT
+
+@var 			text	backgroundUrl	"Background Image URL"	url(https://github.com/Bruhtek/stylus-yuri-chesscom/blob/master/background.jpg)
+==/UserStyle== */
+
+@-moz-document domain("chess.com") {
+	html::before {
+		content: "";
+		position: absolute;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background: var(--backgroundUrl);
+		background-size: cover;
+		background-clip: border-box;
+		transform: scaleX(-1);
+	}
+
+	.player-tagline,
+	.board-layout-nav,
+	.sidebar-component,
+	.board-layout-controls * {
+		background-color: rgba(0, 0, 0, .45) !important;
+	}
+
+	.player-tagline,
+	.player-avatar {
+		padding: 2px;
+		border-radius: 5px;
+	}
+	.board-layout-controls * {
+		padding: 0;
+		margin: 0 !important;
+	}
+}
